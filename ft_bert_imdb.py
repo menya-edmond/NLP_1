@@ -7,10 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/11SNlG72W2M_sF-WNmXLM6kqVnXTuaA03
 """
 
-!pip install -q tensorflow-text
-!pip install -q tf-models-official
-!pip install nlp
-!pip install transformers
+#!pip install -q tensorflow-text
+#!pip install -q tf-models-official
+#!pip install nlp
+#!pip install transformers
 
 import tensorflow as tf
 import tensorflow_hub as hub
@@ -250,8 +250,9 @@ print(f'Loss: {loss}')
 print(f'Accuracy: {accuracy}')
 
 history_dict = history.history
-print(history_dict.keys())
+print(history_dict)
 
+"""
 acc = history_dict['binary_accuracy']
 val_acc = history_dict['val_binary_accuracy']
 loss = history_dict['loss']
@@ -278,3 +279,4 @@ plt.title('Training and validation accuracy')
 plt.xlabel('Epochs')
 plt.ylabel('Accuracy')
 plt.legend(loc='lower right')
+"""

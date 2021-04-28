@@ -1,0 +1,4 @@
+# ignore data folder
+data/
+.DS_Store
+.ipynb_checkpoints
